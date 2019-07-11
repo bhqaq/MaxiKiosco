@@ -1,0 +1,2 @@
+# MaxiKiosco
+Example CRUB MaxiKiosco
