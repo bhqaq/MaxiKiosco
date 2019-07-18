@@ -1,22 +1,32 @@
-<h1>Listado de Productos</h1>
-<table>
-  <tr>
-    <thead>
-      <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Precio</th>
-    </thead>
-  </tr>
-  <% @products.each do |product| %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>Articulos</title>
+  <style type="text/css">
+
+</style>
+</head>
+<body>
+  <h1>Listado de Productos</h1>
+  <%= link_to "Agregar artículos a la lista de Productos", products_new_url %>
+  <table>
+    <tr>
+      <thead>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Precio</th>
+      </thead>
+    </tr>
+    <% @products.each do |product| %>
     <tr>
       <td><%= product.name %></td>
       <td><%= product.description %></td>
       <td><%= product.price %></td>
       <td>
-        <%= link_to "Mostrar" %>
-        <%= link_to "Editar" %>
-        <%= link_to "Elimar" %>
+        <%= link_to "Editar", edit_product_url(product) %>
+        <%= link_to "Eliminar",product, method: :delete, data: { confirm:   "borrar"} %>
       </td>
     </tr>
-  <% end %>
-</table>
+    <% end %>
+  </table>
+</body>

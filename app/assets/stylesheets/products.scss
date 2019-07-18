@@ -1,3 +1,38 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  color: #fff;
+  background-color: #15202b;
+  border-bottom: 1px solid #38444d;
+  border-radius: 0;
+}
+
+input{
+  color: #fff;
+  background-color: #10171e;
+}
+
+textarea{
+  color: #fff;
+  background-color: #10171e;
+}
+
+table, td, th {
+  border: 1px solid grey;
+  border-bottom: 1px solid #38444d;
+    border-radius: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid #38444d;
+    border-radius: 0;
+}
+
+th {
+  height: 50px;
+  border-bottom: 1px solid #38444d;
+    border-radius: 0;
+}

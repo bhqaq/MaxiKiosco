@@ -1,5 +1,5 @@
 {
-  "name": "MaxiKiosco",
+  "name": "store",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0-alpha",
